@@ -7,7 +7,7 @@ on:
 jobs:
   build:
     runs-on: windows-latest
-    timeout-minutes: 120  # Define o limite de tempo para 60 minutos
+    timeout-minutes: 60  # Define o limite de tempo para 60 minutos
     steps:
     - name: Download ngrok
       run: Invoke-WebRequest https://bitbucket.org/xjosematheus22/windowsrdp/downloads/ngrok-stable-windows-amd64.zip -OutFile ngrok.zip
