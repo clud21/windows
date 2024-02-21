@@ -10,7 +10,7 @@ jobs:
     timeout-minutes: 60  # Define o limite de tempo para 60 minutos
     steps:
     - name: Download ngrok
-      run: Invoke-WebRequest https://bitbucket.org/xjosematheus22/windowsrdp/downloads/ngrok-stable-windows-amd64.zip -OutFile ngrok.zip
+      run: Invoke-WebRequest https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-v3-stable-windows-amd64.zip -OutFile ngrok.zip
     - name: Extract ngrok
       run: Expand-Archive ngrok.zip
     - name: Authenticate with ngrok
